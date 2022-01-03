@@ -11,7 +11,7 @@ let textDate = `Fecha: Abril 2, 2022<br>Hora: 3:30 pm`
 
 
 let elementPlace = document.getElementsByClassName("text-place");
-let textPlace = `Lugar: Cariva Eventos,<br>Santa Elena <br> Trage Formal <br> Lluvia de sobres`
+let textPlace = `Lugar: Cariva Eventos,<br>Santa Elena <br> Traje Formal <br> Lluvia de sobres`
 
 // Timeline
 let tl = gsap.timeline()

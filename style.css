@@ -1,0 +1,135 @@
+/*
+F3D5C0
+D4B499
+889EAF
+506D84
+*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./images/fondo.jpeg);
+  overflow: hidden;
+  font-family: 'Great Vibes', cursive;
+}
+
+.container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  align-items: center;
+  background-image: radial-gradient(circle, hsla(25, 100%, 95%, 1) 25%, hsla(25, 68%, 85%, 1) 100%);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  justify-content: center;
+  text-align: center;
+  width: 80vw;
+  border-radius: 10px 100px / 120px;
+}
+
+.block {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+}
+
+.block--invite {
+  height: 15vh;
+  opacity: 1;
+}
+
+.block--names {
+  height: 55vh;
+}
+
+.block--date {
+  height: 10vh;
+}
+
+.block--place {
+  height: 25vh;
+}
+
+.block--image {
+  opacity: 0.3;
+}
+
+.block__image {
+  position: fixed;
+  height: 15vh;
+  opacity: 0.3;
+}
+
+.block__image--reverse {
+  transform: scale(-1, -1);
+}
+
+.block__image--top {
+  top: 0;
+}
+
+.block__image--bottom {
+  bottom: 0;
+}
+
+.block__image--right {
+  right: 0;
+}
+
+.block__image--left {
+  left: 0;
+}
+
+.block__text {
+  font-size: 8vw;
+}
+
+.block__text--names {
+  justify-self: flex-start;
+  font-family: 'Mea Culpa', cursive;
+  font-size: 25vw;
+} 
+
+.block__button {
+  display: block;
+  width: fit-content;
+  background: #D4B499;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+  line-height: 25px;
+  position: fixed;
+  left: 2vh;
+  bottom: 2vh;
+  box-shadow: 5px 4px 6px #506D84;
+  opacity: 0;
+}
+
+@media (min-width: 600px) {
+  .block--invite {
+    height: 37vh;
+  }
+
+  .block--date {
+    height: 25vh;
+  }
+
+  .block--place {
+    height: 49vh;
+  }
+
+  .block__text--names {
+    font-size: 10vw;
+  } 
+}
